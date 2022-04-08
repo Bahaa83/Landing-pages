@@ -62,9 +62,6 @@ header .container nav{
     align-items: center;
 }
 
-header .container nav .logo1{
-    
-}
 @media (max-width:767px) {
     header .container nav .logo1{
     display:none ;
@@ -119,9 +116,6 @@ header .container nav ul li a i{
     padding-right: 5px;
 }
 
-header .container nav ul li a span{
-    
-}
 /*--End Header--*/
 
 /*--Start Main--*/
