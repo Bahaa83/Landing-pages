@@ -41,11 +41,7 @@ ul{
         width: 1170px;
     }
 }
-@media (max-width:1200px) {
-    .container{
-        padding-right: 0;
-    }
-}
+
 
 /*-- End Globel Rules--*/
 
@@ -133,7 +129,7 @@ header .container nav ul li a i{
 }
 
 .main .container{
-    padding: 15px 0;
+    padding: 30px;
 }
 @media (max-width:768px) {
     .main .container{
@@ -211,6 +207,9 @@ header .container nav ul li a i{
     }
 }
 
+.main .container .content .info h2{
+    font-size: 30px;
+}
 .main .container .content .info h2,
 .main .container .content .info h3,
 .main .container .content .info h4{
@@ -220,7 +219,8 @@ header .container nav ul li a i{
 
 .main .container .content .info h3,
 .main .container .content .info h4{
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .main .container .content .info h4{
