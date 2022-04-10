@@ -160,6 +160,7 @@ header .container nav ul li a i{
     border: 1px solid var(--blue-color);
     border-radius: 6px;
     font-weight: 600;
+    cursor: pointer;
 }
 @media (max-width:768px) {
     .main .container .search-btn button{
@@ -311,6 +312,7 @@ header .container nav ul li a i{
     border: 1px solid var(--white-color);
     margin-right: 5px;
     position: relative;
+    cursor: pointer;
 }
 @media (max-width:768px) {
     .main .container .content .btn-form button{
