@@ -450,18 +450,11 @@ background-color: var(--gray-bg-color);
 /*--End Info--*/
 
 /*--Start Tip--*/
-.tips{
-
-}
-
-.tips .container{
-
-}
-
 .tips .container h1{
     font-size: 18px;
     font-weight: 600;
 }
+
 .tips .container .content{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
@@ -486,10 +479,68 @@ background-color: var(--gray-bg-color);
     width: 200px;
 }
 
-
-
-
 /*--End Tips--*/
+
+/*--Start Feedback*/
+.feedback{
+background-color: var(--greenyellow-bg-color);
+padding: 20px 0;
+}
+
+.feedback .container .box{
+    display: flex;
+    width: 325px;
+}
+
+
+.feedback .container .box .text h1{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.feedback .container .box .text p{
+    line-height: 1.4;
+    padding-bottom: 25px;
+}
+
+
+.feedback .container .links{
+    display: flex;
+    gap: 20px;
+}
+
+.feedback .container .links .link i{
+    color: #1616b2;
+}
+
+.feedback .container .links .link a{
+    text-decoration: none;
+    color: #1616b2;
+}
+.feedback .container .links .api a{
+    text-decoration: none;
+    color: #777;
+}
+
+.feedback .container .links .link a:hover,
+.feedback .container .links .api a:hover{
+    text-decoration:underline;
+}
+
+.feedback .container .links .api{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feedback .container .links .api i{
+    color: #777;
+    margin-right: 5px;
+}
+
+/*--End Feedback*/
+
+
 
 
 
