@@ -508,6 +508,12 @@ padding: 20px 0;
     display: flex;
     gap: 20px;
 }
+@media (max-width:768px) {
+    .feedback .container .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .feedback .container .links .link i{
     color: #1616b2;
