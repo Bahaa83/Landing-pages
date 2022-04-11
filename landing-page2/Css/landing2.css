@@ -393,5 +393,81 @@ header .container nav ul li a i{
 }
 /*--End Vacant Jobs--*/
 
+/*--Start Info--*/
+.information{
+background-color: var(--gray-bg-color);
+
+}
+
+.information .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:1000px) {
+    .information .container{
+        flex-direction: column;
+    }
+}
+
+.information .container .box{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: var(--gray-bg-color);
+    padding: 20px 10px;
+    position: relative;
+}
+@media (max-width:768px) {
+    .information .container .box{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.information .container .box:first-of-type::after{
+    content: "";
+    position: absolute;
+}
+@media (max-width:1000px) {
+    .information .container .box:first-of-type::after{
+        width:calc(100% + 30px);
+        height: 15px;
+        background-color: var(--white-color);
+        left: -15px;
+        bottom: -11px;
+        z-index: 5;
+    }
+}
+
+@media (max-width:1000px) {
+    .information .container .box:last-of-type{
+        margin-top: 12px;
+    }
+}
+
+.information .container .box .img{
+    margin-right: 15px;
+}
+
+.information .container .box .img img{
+    width: 80px;
+}
+
+.information .container .box .text{
+
+}
+
+.information .container .box .text h1{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.information .container .box .text p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.6;
+}
+/*--End Info--*/
+
 
 
