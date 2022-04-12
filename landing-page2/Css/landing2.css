@@ -50,6 +50,7 @@ header{
 max-width: 100%;
 background-color: var(--white-color);
 min-height:78px;
+position: relative;
 }
 
 header .container nav{
@@ -82,6 +83,23 @@ header .container nav ul{
     display: flex;
     justify-content: flex-end;
 }
+header .container nav ul .toggle::after{
+    content: "";
+    position: fixed;
+    z-index:1200;
+    height: calc(100vh + 78px);
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #0000008f;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+header .container nav ul .toggle:hover::after,
+header .container nav ul .toggle:hover .mega-menu{
+    visibility: visible;
+}
 
 header .container nav ul li{
     padding: 0 15px;
@@ -112,12 +130,75 @@ header .container nav ul li a i{
     padding-right: 5px;
 }
 
+header .container nav ul li .mega-menu{
+    position: absolute;
+    z-index:1500;
+    height: calc(100vh + 78px);
+    width: 350px;
+    right: 0;
+    background-color: var(--white-color);
+    top: 0;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+header .container nav ul li .mega-menu ul{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 15px solid #ddd
+}
+header .container nav ul li .mega-menu ul:first-child li a {
+    text-decoration: underline;
+}
+
+header .container nav ul li .mega-menu ul li{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    font-size: 20px;
+}
+
+header .container nav ul li .mega-menu ul:first-child li:first-child {
+    padding: 8px 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    color: #424ae0;
+}
+
+header .container nav ul li .mega-menu ul:first-child li:first-child .close{
+    cursor: pointer;
+}
+header .container nav ul li .mega-menu ul:nth-child(2) li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav ul li .mega-menu ul:nth-child(2) li span{
+    padding: 8px 0 20px 10px;
+    border-left: 1px solid #ddd;
+    
+}
+
+header .container nav ul li .mega-menu ul:nth-child(2) li:last-of-type a{
+    border-right: 1px solid #ddd;
+}
+
+header .container nav ul li .mega-menu ul:nth-child(2) li:last-of-type span i{
+    visibility: hidden;
+}
+
+
+header .container nav ul li .mega-menu ul li a{
+    padding: 8px 15px 20px;
+}
+
 /*--End Header--*/
 
 /*--Start Main--*/
 .main{
     background-image: url("../Images/start-page-background-q50.jpg");
-    min-height: 600px;
+    min-height: 100vh;
     background-size: cover;
     background-position-x: 65%,center;
 }
@@ -125,6 +206,12 @@ header .container nav ul li a i{
     .main{
         background-image: none;
         min-height: 50vh;
+    }
+}
+
+@media (min-width:1150px) {
+    .main{
+        min-height: 600px;
     }
 }
 
