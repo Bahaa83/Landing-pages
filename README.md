@@ -6,4 +6,4 @@ Landing page template using Html Css only.
 <h2> Landing-page2</h2>
 landing page template for 'Arbetsförmedlingen' using Html Css only.
 
-[Landing-page2](https://bahaa83.github.io/Landing-pages/Landing-page2/landing2.html)
+[Landing-page2](https://bahaa83.github.io/Landing-pages/landing-page2/landing2.html)
